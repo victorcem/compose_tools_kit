@@ -1,3 +1,20 @@
 <resources>
+    <string name="empty"></string>
     <string name="app_name">Compose tool kit</string>
+    <string name="profile_name">Kit de Ferramentas</string>
+    <string name="bottom_bar_home">Home</string>
+    <string name="bottom_bar_profile">Profile</string>
+    <string name="bottom_bar_settings">Settings</string>
+
+    <string name="btn_row_cancel" translatable="false">Cancelar</string>
+    <string name="btn_row_maybe" translatable="false">Talvez</string>
+    <string name="btn_row_confirm" translatable="false">OK</string>
+
+    <string name="btn_template_name" translatable="false">Template</string>
+    <string name="exit_loading">Encerrar Loading</string>
+    <string name="enter_loading">Reiniciar Loading</string>
+    <string name="loading">Carregando…</string>
+    <string name="register_id">Número de registro</string>
+    <string name="activated">Ativado em:</string>
+    <string name="last_login">Último acesso:</string>
 </resources>
