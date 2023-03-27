@@ -10,7 +10,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.viewmodel.compose.viewModel
 import br.com.otavio.victor.composetoolkit.ui.screens.ColumnRowsBoxes
+import br.com.otavio.victor.composetoolkit.ui.screens.observeState.LoadingView
+import br.com.otavio.victor.composetoolkit.ui.screens.observeState.LoadingViewModel
 import br.com.otavio.victor.composetoolkit.ui.theme.ToolKitTheme
 
 @Composable
@@ -24,7 +27,8 @@ fun ToolKitApp(modifier: Modifier = Modifier) {
                 .padding(it),
             color = MaterialTheme.colorScheme.background
         ) {
-            ColumnRowsBoxes(LocalContext.current)
+            //ColumnRowsBoxes(LocalContext.current)
+            LoadingView(viewModel = viewModel())
         }
     }
 }

@@ -80,7 +80,7 @@ fun ArsenalButtonLightPreview() {
 
 @Preview
 @Composable
-fun ArsenalButtonDarkPreview() {
+fun ToolKitButtonLightPreview() {
     ToolKitTheme(useDarkTheme = true) {
         ToolKitButton(
             modifier = Modifier.widthIn(min = 100.dp, max = 120.dp),
@@ -92,7 +92,7 @@ fun ArsenalButtonDarkPreview() {
 
 @Preview
 @Composable
-fun ArsenalButtonRowLightPreview() {
+fun ToolKitButtonDarkPreview() {
     ToolKitTheme(useDarkTheme = false) {
         ToolKitButtonRow(
             modifier = Modifier.widthIn(min = 100.dp, max = 120.dp),
