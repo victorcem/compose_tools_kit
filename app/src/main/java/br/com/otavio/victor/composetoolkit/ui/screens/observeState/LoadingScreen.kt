@@ -18,6 +18,10 @@ import br.com.otavio.victor.composetoolkit.ui.components.ToolKitCircularProgress
 import br.com.otavio.victor.composetoolkit.ui.theme.ToolKitTheme
 import br.com.otavio.victor.composetoolkit.ui.theme.ToolKitThemeExtended
 
+// 1) COMO OBSERVAR ESTADOS EM COMPOSE COM VIEWMODEL
+// 2) COMO CRIAR UM COMPONENTE REUTILIZÁVEL PARA LOADING SCREENS
+// 3) COMO PASSAR ESTADO PARA COMPOSABLE E COMO ALTERA-LO (LOADING VIEW)
+// 4) COMO INSTANCIAR O FLOW NO PREVIEW USANDO VIEW MODEL
 @Composable
 fun LoadingView(viewModel: LoadingViewModel) {
 

@@ -17,6 +17,9 @@ import br.com.otavio.victor.composetoolkit.ui.components.ToolKitIconImage
 import br.com.otavio.victor.composetoolkit.ui.theme.ToolKitTheme
 import br.com.otavio.victor.composetoolkit.ui.theme.ToolKitThemeExtended
 
+// 1) Como estruturar componente (antes de começar) Criar view
+// 2) Como usar Column, Rows, Boxes - Criar componentes
+// 3) Como deixar seus componentes reusáveis
 @Composable
 fun ColumnRowsBoxes(context: Context) {
     val action = { Toast.makeText(context, "Fui clicado aqui!", Toast.LENGTH_SHORT).show() }
