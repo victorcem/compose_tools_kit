@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             ToolKitTheme {
-                ToolKitApp(modifier = Modifier, searchViewModel)
+                ToolKitApp()
             }
         }
     }
