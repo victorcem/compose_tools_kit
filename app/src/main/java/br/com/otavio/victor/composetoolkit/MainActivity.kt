@@ -8,6 +8,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.modifier.modifierLocalConsumer
 import androidx.lifecycle.viewmodel.compose.viewModel
 import br.com.otavio.victor.composetoolkit.ui.ToolKitApp
+import br.com.otavio.victor.composetoolkit.ui.screens.Search.ShearchViewModel
 import br.com.otavio.victor.composetoolkit.ui.screens.expandableView.SaveableViewModel
 import br.com.otavio.victor.composetoolkit.ui.theme.ToolKitTheme
 
@@ -16,10 +17,11 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         val saveableViewModel: SaveableViewModel by viewModels()
+        val searchViewModel: ShearchViewModel by viewModels()
 
         setContent {
             ToolKitTheme {
-                ToolKitApp()
+                ToolKitApp(modifier = Modifier, searchViewModel)
             }
         }
     }

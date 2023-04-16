@@ -8,12 +8,15 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.viewmodel.compose.viewModel
+import br.com.otavio.victor.composetoolkit.ui.screens.Search.SearcheableTopBarScreen
+import br.com.otavio.victor.composetoolkit.ui.screens.Search.ShearchViewModel
 import br.com.otavio.victor.composetoolkit.ui.screens.animated.SettingScreenAnimated
 import br.com.otavio.victor.composetoolkit.ui.screens.animated.SettingsAnimatedViewModel
 import br.com.otavio.victor.composetoolkit.ui.theme.ToolKitTheme
 
 @Composable
-fun ToolKitApp(modifier: Modifier = Modifier) {
+fun ToolKitApp(modifier: Modifier = Modifier, searchViewModel: ShearchViewModel) {
     Scaffold(
         modifier = modifier.fillMaxSize(),
     ) {
@@ -28,7 +31,8 @@ fun ToolKitApp(modifier: Modifier = Modifier) {
             //RootNavigationGraph(navController = rememberNavController())
             //LazyColumnMultiItem()
             //ExpandableView(viewModel: SaveableViewModel)
-            SettingScreenAnimated(viewModel = SettingsAnimatedViewModel())
+            //SettingScreenAnimated(viewModel = SettingsAnimatedViewModel())
+            SearcheableTopBarScreen(searchViewModel)
         }
     }
 }
@@ -37,7 +41,7 @@ fun ToolKitApp(modifier: Modifier = Modifier) {
 @Composable
 fun ToolKitAppLightPreview() {
     ToolKitTheme(useDarkTheme = false) {
-        ToolKitApp()
+        ToolKitApp(searchViewModel = ShearchViewModel())
     }
 }
 
@@ -45,6 +49,6 @@ fun ToolKitAppLightPreview() {
 @Composable
 fun ToolKitAppDarkPreview() {
     ToolKitTheme(useDarkTheme = true) {
-        ToolKitApp()
+        ToolKitApp(searchViewModel = ShearchViewModel())
     }
 }
