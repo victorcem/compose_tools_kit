@@ -8,7 +8,8 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import br.com.otavio.victor.composetoolkit.ui.screens.animated.LazyColumnAnimatedScreen
+import br.com.otavio.victor.composetoolkit.ui.screens.animated.SettingScreenAnimated
+import br.com.otavio.victor.composetoolkit.ui.screens.animated.SettingsAnimatedViewModel
 import br.com.otavio.victor.composetoolkit.ui.theme.ToolKitTheme
 
 @Composable
@@ -27,7 +28,7 @@ fun ToolKitApp(modifier: Modifier = Modifier) {
             //RootNavigationGraph(navController = rememberNavController())
             //LazyColumnMultiItem()
             //ExpandableView(viewModel: SaveableViewModel)
-            LazyColumnAnimatedScreen()
+            SettingScreenAnimated(viewModel = SettingsAnimatedViewModel())
         }
     }
 }
