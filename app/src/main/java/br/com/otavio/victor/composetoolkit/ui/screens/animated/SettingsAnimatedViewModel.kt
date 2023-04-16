@@ -1,33 +1,34 @@
-package br.com.otavio.victor.composetoolkit.ui.screens.lazyColumn
+package br.com.otavio.victor.composetoolkit.ui.screens.animated
 
 import android.util.Log
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.runtime.mutableStateListOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
 
-class LazyColumnViewModel : ViewModel() {
 
-    val items = MutableStateFlow<MutableList<Item>>(mutableStateListOf())
+class SettingsAnimatedViewModel : ViewModel() {
+
+    val items = MutableStateFlow<MutableList<ItemAnimated>>(mutableStateListOf())
     val registerId = MutableStateFlow("")
 
-    fun setItems(Items: List<Item>) {
+    fun setItems(items: List<ItemAnimated>) {
         viewModelScope.launch {
-            this@LazyColumnViewModel.items.emit(items as MutableList<Item>)
+            this@SettingsAnimatedViewModel.items.emit(items as MutableList<ItemAnimated>)
         }
     }
 
-    fun removeItem(item: Item) {
+    fun removeItem(item: ItemAnimated) {
         items.value = items.value.filter { it != item }.toMutableList()
     }
 
-    //Setings Animation
     fun navigateTo(destinationId: Int) {
         Log.d("TESTANDO", "Navegue para destination: $destinationId")
     }
 
-    fun getLastItemID(): Int = items.value.last().id
+    fun getLastItemId(): Int = items.value.last().id
 
     fun setRegisterId(id: String) {
         viewModelScope.launch {
