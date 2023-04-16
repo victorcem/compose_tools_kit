@@ -10,6 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
 import br.com.otavio.victor.composetoolkit.ui.screens.GridView.GridViewScreen
+import br.com.otavio.victor.composetoolkit.ui.screens.HomeScreen.HomeScreen
 import br.com.otavio.victor.composetoolkit.ui.screens.ProfileImageScreen
 import br.com.otavio.victor.composetoolkit.ui.screens.ProfileRowScreen
 import br.com.otavio.victor.composetoolkit.ui.screens.Search.SearcheableTopBarScreen
@@ -40,7 +41,8 @@ fun ToolKitApp(modifier: Modifier = Modifier) {
             //ProfileImageScreen()
             //ProfileRowScreen()
             //SimpleCardScreen()
-            GridViewScreen()
+            //GridViewScreen()
+            HomeScreen()
         }
     }
 }
