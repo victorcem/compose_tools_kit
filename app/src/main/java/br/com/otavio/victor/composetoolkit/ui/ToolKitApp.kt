@@ -10,6 +10,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
 import br.com.otavio.victor.composetoolkit.ui.screens.BottomNav.BottomNavScreen
+import br.com.otavio.victor.composetoolkit.ui.screens.DrawerMenu.DrawerScreen
+import br.com.otavio.victor.composetoolkit.ui.screens.FullScreenMessage.FullScreenMessageDialog
 import br.com.otavio.victor.composetoolkit.ui.screens.GridView.GridViewScreen
 import br.com.otavio.victor.composetoolkit.ui.screens.HomeScreen.HomeScreen
 import br.com.otavio.victor.composetoolkit.ui.screens.ProfileImageScreen
@@ -46,7 +48,9 @@ fun ToolKitApp(modifier: Modifier = Modifier) {
             //GridViewScreen()
             //HomeScreen()
             //BottomNavScreen()
-            SplashScreen()
+            //SplashScreen()
+            //DrawerScreen()
+            FullScreenMessageDialog()
         }
     }
 }
